@@ -7,4 +7,9 @@
 - 自動勾選同意會員服務條款
 - 自動填入驗證碼
 
-![](https://raw.githubusercontent.com/T1ckbase/tixcaraft-helper/main/video.mp4)
+
+
+
+
+https://github.com/user-attachments/assets/f40198f5-e70a-4ed6-b651-002449316c7c
+
