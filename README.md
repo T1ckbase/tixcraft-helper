@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/T1ckbase/tixcraft-helper/refs/heads/main/img/shushing128.png" />
+</p>
+
 # Tixcraft Helper
 
 ## 說明
