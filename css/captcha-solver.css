@@ -1,0 +1,29 @@
+html {
+    /* background-color: darkgrey !important; */
+    /* border: 2px solid red !important; */
+    /* display: none !important; */
+    /* pointer-events: none !important; */
+    /* user-select: none !important; */
+}
+
+/* html::before {
+    content: '請勿關閉此分頁';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    z-index: 2147483647;
+} */
+
+* {
+	/* animation-duration: 0s !important; */
+	/* transition: none !important; */
+	/* transition-duration: 0s !important; */
+	/* animation-iteration-count: 1 !important; */
+
+    /* display: none !important; */
+    /* visibility: hidden !important; */
+    /* pointer-events: none !important; */
+    /* user-select: none !important; */
+}

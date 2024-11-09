@@ -1,0 +1,55 @@
+{
+    "manifest_version": 3,
+    "name": "tixcraft helper",
+    "description": "test",
+    "version": "0.0.0",
+    "minimum_chrome_version": "129.0",
+    "icons": {
+        "16": "img/shushing16.png",
+        "32": "img/shushing32.png",
+        "48": "img/shushing48.png",
+        "128": "img/shushing128.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "scripting",
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://translate.google.com/*",
+        "https://tixcraft.com/ticket/captcha"
+    ],
+    "background": {
+        "service_worker": "/js/background.js"
+    },
+    "content_scripts": [
+        {
+            "js": ["js/detail.js"],
+            "matches": ["*://tixcraft.com/activity/detail/*"],
+            "run_at": "document_end"
+        },
+        {
+            "js": ["js/ticket.js"],
+            "matches": ["*://tixcraft.com/ticket/ticket/*"],
+            "run_at": "document_start"
+        },
+        {
+            "js": ["js/animation.js"],
+            "matches": ["*://translate.google.com/*"],
+            "include_globs": ["*#captchaSolver*"],
+            "run_at": "document_start",
+            "world": "MAIN"
+        },
+        {
+            "js": ["js/captcha-solver.js"],
+            "css": ["css/captcha-solver.css"],
+            "matches": ["*://translate.google.com/*"],
+            "include_globs": ["*#captchaSolver*"],
+            "run_at": "document_end"
+        }
+    ]
+}
